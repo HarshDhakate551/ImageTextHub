@@ -10,9 +10,9 @@ const app = express();
 
 // creating uploads directory if not present
 const fs = require("fs");
-console.log(fs.existsSync("./routes/uploads"));
-if (!fs.existsSync("./routes/uploads")) {
-  fs.mkdirSync(`${__dirname}/routes/uploads`);
+console.log(fs.existsSync("./uploads"));
+if (!fs.existsSync("./uploads")) {
+  fs.mkdirSync(`${__dirname}/uploads`);
 }
 
 require("dotenv").config();
