@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../particles/link') %>
+    <title>Delete Perticular</title>
+</head>
+<body>
+    <% if (database.length != 0) { %>
+        <h1>Data deleted sucessfully!!</h1>
+        <% } else { %>
+            <h1>Selected Data Deleted Successfully and No Quotes found in the database.</h1>
+        <% } %>
+
+    <a class="btn btn-info" href="/" style="margin-right: 10px;">Home</button>        
+    <a class="btn btn-info" href="/delete" style="margin-right: 10px;">Delete</button>
+    <a class="btn btn-info" href="/show" style="margin-right: 10px;">View</button>
+    <a class="btn btn-info" href="/update" style="margin-right: 10px;">Update</button>
+    <a class="btn btn-info" href="/upload" style="margin-right: 10px;">Upload</button>        
+
+
+    <%- include('../particles/script') %>
+</body>
+</html>
