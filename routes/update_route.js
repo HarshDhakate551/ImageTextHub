@@ -1,11 +1,13 @@
 const express = require("express");
 const multer = require("multer");
 const t = require("tesseract.js");
+// here tesseractJS is an ORM service which can convert image's text to raw txt which can then be extracted 
 const render = express.Router();
 
 // render.use(express.json());
 render.use(express.urlencoded({ extended: true }));
 
+// Configuring the diskstorage of multer so that filename can be stored with unique identity even though the filename at the time of upload was same
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
     callback(null, `${__dirname}` + "/uploads/"); // Ensure this directory exists
@@ -16,8 +18,10 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
+// embeding th changes
 
 const { Quote, Counter } = require("../script");
+// imoprting the databases for furthur usage
 
 async function Update(query, filename) {
   let path = `${__dirname}/uploads/` + `${filename}`;
@@ -32,25 +36,6 @@ async function Update(query, filename) {
     const newQuote = new Quote({ SrNo: query, quote: text });
     await newQuote.save();
   }
-
-  // in  My code i don't have permission to do forEach because it's not a function error
-  //   datas.forEach((Single_quote_object) => {
-  //         if (Single_quote_object.SrNo === query) {
-  //                 SrNo = Single_quote_object.SrNo;
-  //               t.recognize(path, "eng").then(async (out) => {
-  //                     await Quote.findOneAndUpdate(
-  //                           { SrNo: query },
-  //                           { quote: out.data.text }
-  //                           // new makes an new object , upsert makes the default is not true else it would prevent extra creation
-  //                         );
-  //                       });
-  //                     }
-  //                     else{
-  //                             t.recognize(path, "eng").then(async (out) => {
-  //                                     new Quote({ SrNo: query, quote: out.data.text });
-  //                             })
-  //                           }
-  //                         });
 }
 
 render.get("/update", async (req, resp) => {
