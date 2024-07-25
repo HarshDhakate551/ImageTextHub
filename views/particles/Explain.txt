@@ -1,0 +1,1 @@
+It's just an component file while components are used in every ejs file
