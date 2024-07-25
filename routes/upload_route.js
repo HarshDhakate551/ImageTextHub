@@ -9,7 +9,9 @@ const t = require("tesseract.js");
 // defining multer storage engine
 const storage = multer.diskStorage({
   destination: function (req, file, callback) {
-    const newpath = path.join(__dirname, "/uploads/");
+   const resolvedPath = path.resolve(__dirname, "..");
+    console.log(resolvedPath);
+    const newpath = path.join(resolvedPath, "/uploads/");
     callback(null, newpath);
   },
   filename: function (req, file, callback) {
@@ -22,7 +24,10 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 async function PutData(filename) {
-  let path = `${__dirname}/uploads/` + `${filename}`;
+  console.log(__dirname);
+  let resolvePath = path.resolve(__dirname, "..");
+  console.log(resolvePath);
+  let newpath = `${resolvePath}/uploads/` + `${filename}`;
   await t
     .recognize(path, "eng" /*{logger: e => console.log(e)}*/)
     // t.recognize to innitiate the module where we pass image , the language , logger(optional)
