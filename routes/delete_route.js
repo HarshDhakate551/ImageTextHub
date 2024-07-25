@@ -20,6 +20,7 @@ router.get("/Delete_Perticular_Data_PAGE", async (req, resp) => {
 router.get("/DeleteAll_Data_Page", async (req, resp) => {
   const result = await Quote.deleteMany({});
   await Counter.findOneAndUpdate(
+    // the id here is an unique id of persistant counter which increment, the value may varry in your case you thier may be chance that yiu have to update it
     { _id: "665338cee0e36ff7e7b9958b" },
     { $set: { counter: 0 } }
   );
