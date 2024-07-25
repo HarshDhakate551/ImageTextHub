@@ -9,6 +9,7 @@ I know the flaw that what if i don't delete uploaded iamge in application, i try
 2. open the project in **VS Code** or any other editor and in terminal write **npm init i** *(Given you have npm installed else get it installed as well as node)*.
 3. Create an **.env** file an provide value of **PORT**= ***(Desired values)*** similarly for **database_name** variable in that folder Below is refrence.
      >PORT = 6500
+     >
      >database_name = TextORM  
 4. Now to **Host** the Application type **npm run nodemon** *(it will even Bypass the script permision denied error of windows, no idea of linux or mac)*.
 5. Open your **Browser** an write ***localhost:(The passed port no. in env)***.
