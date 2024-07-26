@@ -4,6 +4,16 @@
 Various times you click screenshot beacase you want to store some text and is costly on memory to keep then so this project use TeseractJS an **ORM** to extract text from the image and store it in the database.
 I know the flaw that what if i don't delete uploaded iamge in application it's one in the same, I am trying to resolve that issue myself which make take some time.
 
+### All Dependencies And their Documentation
+- Node       - [https://nodejs.org/en](https://nodejs.org/docs/v20.15.0/api/documentation.html)
+- ExpressJS  - [https://expressjs.com/](https://expressjs.com/en/4x/api.html#app.set)
+- Mongoose   - https://mongoosejs.com/
+- MongoDB    - https://www.mongodb.com/docs/manual/introduction/
+- TeseractJS - https://tesseract.projectnaptha.com/
+- ejs        - https://ejs.co/
+- BootStrap  - https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+
 ### How to use it
 1. Download the Project to your system.
 2. Open the project in **VS Code** or any other editor and in terminal write **npm init i** *(Given you have npm installed else get it installed as well as node)*.
@@ -15,6 +25,8 @@ I know the flaw that what if i don't delete uploaded iamge in application it's o
       
 4. Now to **Host** the Application type **npm run nodemon** *(it will even Bypass the script permision denied error of windows, no idea of linux or mac)*.
 5. Open your **Browser** an write ***localhost:(The passed port no. in env)***.
+
+   Some Knowledge That ***Both the SrNo are interlinked in every page***.
 
 **TADA!!! You have Hosted the downloaded project atlest thats what i think**.
 
