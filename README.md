@@ -37,6 +37,6 @@ I know the flaw that what if i don't delete uploaded iamge in application it's o
 4. The **FrontEnd** is not mobile Friendly and i know it, If you can *correct* it feel free to make changes
 
 ### Images
-![Screenshot 2024-08-13 231906](https://github.com/user-attachments/assets/0fb93993-2a9f-4e46-be6b-0530a2e856bb)
-![Screenshot 2024-08-13 231916](https://github.com/user-attachments/assets/36211abc-62d3-47df-92fa-35bf6e499fb8)
+![Screenshot 2024-08-13 233035](https://github.com/user-attachments/assets/9bc18fae-b0c1-4f1c-beab-307de0aa1024)
+![Screenshot 2024-08-13 233022](https://github.com/user-attachments/assets/9d12104a-d241-45e9-aa45-4e5186c5dfe8)
 
