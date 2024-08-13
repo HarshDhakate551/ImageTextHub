@@ -35,3 +35,6 @@ I know the flaw that what if i don't delete uploaded iamge in application it's o
 2. If you uploaded somthing to the folder via **Uploads** you have to ***Manually Delete*** it from the folder of **uploads** whose location is routes->uploads.
 3. It is **necessary** for file's name at the time of upload to be **file** ,So make sure to rename the file's name as **file**
 4. The **FrontEnd** is not mobile Friendly and i know it, If you can *correct* it feel free to make changes
+
+### Images
+![Screenshot 2024-08-13 231906](https://github.com/user-attachments/assets/0fb93993-2a9f-4e46-be6b-0530a2e856bb)
