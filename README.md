@@ -40,3 +40,5 @@ I know the flaw that what if i don't delete uploaded iamge in application it's o
 ![Screenshot 2024-08-13 233035](https://github.com/user-attachments/assets/9bc18fae-b0c1-4f1c-beab-307de0aa1024)
 ![Screenshot 2024-08-13 233022](https://github.com/user-attachments/assets/9d12104a-d241-45e9-aa45-4e5186c5dfe8)
 
+# Feature to add
+Extracted text being displaayed with other scenary images
